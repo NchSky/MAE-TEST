@@ -23,13 +23,15 @@
 		<link rel="stylesheet" href="css/simple-line-icons.css">
 		<!-- Fancybox -->
 		<link rel="stylesheet" href="css/jquery.fancybox.css">
+		<!-- W3schools -->
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	</head>
 	<body>
 
 		<!-- Navbar -->
 		<nav class="navbar navbar-expand-lg navbar-light fixed-top">
 			<div class="container">
-				<a class="navbar-brand" href="http://www.colegiomae.cl/" target="_blank">MAE</a>
+				<a class="navbar-brand" href="http://www.colegiomae.cl/" target="_blank">MAE Website</a>
 				<button class="navbar-toggler nav-toggle" type="button" name="nav_toggle" id="toggle" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="bar-top"></span>
 					<span class="bar-mid"></span>
@@ -65,7 +67,7 @@
 				<div class="typed-strings" style="display: none;">
 					<p>necesitas ayuda?</p>
 				</div>
-				<p>Explícanos tu situación</p>
+				<p>Una página de ayuda para nuestros alumnos</p>
 			</div>
 			<div class="scroll-bottom"><a href="index.html#about" class="scroll-icon"></a></div>
 		</div>
@@ -80,35 +82,32 @@
 		</div>
 		<div class="row">
 			<div class="col-md-6 col-lg-6">
-				<p>Cras sit amet mollis odio. Aliquam ac ante eu mauris tincidunt fermentum sit amet sed mauris. Proin tristique lacus sit amet ante hendrerit iaculis. </p>
-				<p><i class="fas fa-phone"></i> + 26432548</p>
-				<p><i class="fas fa-phone"></i> + 26431919</p>
-				<p><i class="fas fa-envelope"></i> contacto@colegiomae.cl</p>
-				<p><i class="fas fa-map-marker-alt"></i> Avenida La Estrella 1116, Pudahuel</p>
+				<center><p>Muchas cosas de la vida están fuera de control, pero tu controlas lo que pasa contigo. ¡Conversemos!</p></center>
+				<img src="images/estamos-contigo.png" alt="Nature" class="img-responsive">
 			</div>
 			<div class="col-md-6 col-lg-6" id="contactWrapper">
 				<form class="contact-form" id="contactform" action="enviar.php" method="post">
 					<div class="row connection-form">
 						<div class="col-md-6">
-							<input type="text" aria-label="First Name" name="nombre" placeholder="Nombre" id="first-name" size="40" aria-invalid="false" />
-						</div>
-						<div class="col-md-6">
-							<input type="text" aria-label="Last Name" name="apellido" placeholder="Apellido" id="last-name" size="40" aria-invalid="false" />
+							<div class="w3-dropdown-hover">
+								<button class="w3-button w3-black">Asunto</button>
+								<div class="w3-dropdown-content w3-bar-block w3-border">
+								  <a href="#" class="w3-bar-item w3-button">Ayuda psicológica</a>
+								  <a href="#" class="w3-bar-item w3-button">Bullying</a>
+								  <a href="#" class="w3-bar-item w3-button">Acoso</a>
+								  <a href="#" class="w3-bar-item w3-button">Otro</a>
+								</div>
+							</div>
 						</div>
 					</div>
+
 					<div class="row connection-form">
-						<div class="col-md-6">
-							<input type="text" aria-label="Subject" name="subject" id="subject" size="40" aria-invalid="false" placeholder="Asunto" />
+						<div class="col-md-12">
+							<textarea name="message" aria-label="Message" placeholder="Mensaje" id="message" aria-invalid="false"></textarea>
 						</div>
-						<div class="col-md-6">
-							<input type="text" aria-label="Email" name="correo" placeholder="Email" id="email" size="40" aria-invalid="false" />
+						<div class="col-md-12">
+							<input type="submit" value="Enviar" aria-label="Send" class="btn_send" id="submit" onClick="return check_values();" />
 						</div>
-					</div>
-					<div class="col-md-12">
-						<textarea name="message" aria-label="Message" placeholder="Mensaje" id="message" aria-invalid="false"></textarea>
-					</div>
-					<div class="col-md-12">
-						<input type="submit" value="Enviar" aria-label="Send" class="btn_send" id="submit" onClick="return check_values();" />
 					</div>
 				</form>
 			</div>
